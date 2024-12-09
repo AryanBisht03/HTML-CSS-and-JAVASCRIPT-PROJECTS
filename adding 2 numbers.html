@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question2</title>
+    <script src="javascript_question_2.js"></script>
+</head>
+<body>
+    <p>hy this is question 2 using javascript</p>
+    <div>
+        <label for="number1">Number1</label>
+        <input type="number" id="number1" name="number1"  placeholder="Enter number 1">
+    </div>
+    <br>
+    <div>
+        <label for="number2">Number2</label>
+        <input type="number" id="number2" name="number2" placeholder="Enter number 2">
+    </div>
+    <div>
+        <br>
+        <label for="operation">Select operation:</label>
+        <select name="operation" id="operation" name="operation" onchange="performOperation()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="result">Result:</label>
+        <input type="text" id="result" disabled>
+    </div>
+    <br>
+    <br>
+    <span style="color: red;" id="err"></span>
+    
+</body>
+</html>
